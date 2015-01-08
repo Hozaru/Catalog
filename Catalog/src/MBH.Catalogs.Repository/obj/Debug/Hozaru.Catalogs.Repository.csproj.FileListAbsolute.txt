@@ -1,0 +1,14 @@
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Repository.dll
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Repository.pdb
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.csprojResolveAssemblyReference.cache
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.dll
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Repository.dll
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Repository.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\bin\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.csprojResolveAssemblyReference.cache
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.dll
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Repository\obj\Debug\Hozaru.Catalogs.Repository.pdb

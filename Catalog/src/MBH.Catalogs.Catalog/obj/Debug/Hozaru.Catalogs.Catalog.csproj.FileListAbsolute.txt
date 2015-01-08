@@ -1,0 +1,9 @@
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Catalog\bin\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Catalog\bin\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Catalog\obj\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\MBH\Catalogs\src\MBH.Catalogs.Catalog\obj\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Catalog\bin\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Catalog\bin\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Catalog\obj\Debug\Hozaru.Catalogs.Catalog.dll
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Catalog\obj\Debug\Hozaru.Catalogs.Catalog.pdb
+D:\Development\SIQ\Hozaru\Catalog\src\MBH.Catalogs.Catalog\obj\Debug\Hozaru.Catalogs.Catalog.csprojResolveAssemblyReference.cache
