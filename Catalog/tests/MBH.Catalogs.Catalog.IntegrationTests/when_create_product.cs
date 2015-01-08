@@ -52,7 +52,7 @@ namespace Hozaru.Catalogs.Catalog.IntegrationTests
         [TestFixtureTearDown]
         public void CleanUpData()
         {
-            _productRepository.Remove(_productId); 
+            _productRepository.Remove(_productId);
         }
     }
 }
