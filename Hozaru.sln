@@ -23,9 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96BCF895-F1B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F2FF825B-87B7-48BC-BA54-8277896EA555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.DataMapper", "Database\src\Hozaru.Database.DataMapper\Hozaru.Database.DataMapper.csproj", "{03B45EC2-0AEE-49CC-8FFB-A067078B954F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.PostgreSQLDataMapper", "Database\src\Hozaru.Database.PostgreSQLDataMapper\Hozaru.Database.PostgreSQLDataMapper.csproj", "{03B45EC2-0AEE-49CC-8FFB-A067078B954F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.Fixture", "Database\tests\Hozaru.Database.Fixture\Hozaru.Database.Fixture.csproj", "{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.SQLDataMapper", "Database\src\Hozaru.Database.SQLDataMapper\Hozaru.Database.SQLDataMapper.csproj", "{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.PostgreSQLFixture", "Database\tests\Hozaru.Database.PostgreSQLFixture\Hozaru.Database.PostgreSQLFixture.csproj", "{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Database.SQLFixture", "Database\tests\Hozaru.Database.SQLFixture\Hozaru.Database.SQLFixture.csproj", "{8FA8C226-17C6-4DCA-AE63-F583C147062C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,10 +61,18 @@ Global
 		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +88,8 @@ Global
 		{96BCF895-F1BF-4442-B62A-DCED3FEE9079} = {174DB402-08F3-40DD-89EC-8D589EDAAD30}
 		{F2FF825B-87B7-48BC-BA54-8277896EA555} = {174DB402-08F3-40DD-89EC-8D589EDAAD30}
 		{03B45EC2-0AEE-49CC-8FFB-A067078B954F} = {96BCF895-F1BF-4442-B62A-DCED3FEE9079}
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44} = {96BCF895-F1BF-4442-B62A-DCED3FEE9079}
 		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA} = {F2FF825B-87B7-48BC-BA54-8277896EA555}
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C} = {F2FF825B-87B7-48BC-BA54-8277896EA555}
 	EndGlobalSection
 EndGlobal
