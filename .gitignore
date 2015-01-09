@@ -22,3 +22,4 @@ _ReSharper.*
 *.ReSharper
 ~$*
 *.stackdump
+!/.nuget/NuGet.exe
