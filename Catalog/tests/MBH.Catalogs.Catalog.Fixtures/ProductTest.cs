@@ -115,16 +115,16 @@ namespace Hozaru.Catalogs.Catalog.Fixtures
             product.RemoveCombination(Guid.Empty);
         }
 
-        [Test]
-        public void Test_Add_Image()
-        {
-            var caption = "Image Test";
-            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"images-src\picture1.jpg");
-            var image = Image.FromFile(filePath);
-            var fileName = Path.GetFileNameWithoutExtension(filePath);
+        //[Test]
+        //public void Test_Add_Image()
+        //{
+        //    var caption = "Image Test";
+        //    var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"images-src\picture1.jpg");
+        //    var image = Image.FromFile(filePath);
+        //    var fileName = Path.GetFileNameWithoutExtension(filePath);
 
-            product.AddImage(caption, fileName, image);
-            Assert.IsTrue(product.Images.Count(i => i.ImageName == fileName) > 0);
-        }
+        //    product.AddImage(caption, fileName, image);
+        //    Assert.IsTrue(product.Images.Count(i => i.ImageName == fileName) > 0);
+        //}
     }
 }
