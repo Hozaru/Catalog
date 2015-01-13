@@ -1,4 +1,7 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Hozaru.Database.SQLDataMapper.Command;
 using Hozaru.Database.SQLDataMapper.Query;
@@ -7,14 +10,14 @@ namespace Hozaru.Database.SQLDataMapper
 {
     public static class SQL
     {
-        public static bool IsColumnExists(this DataTable schema, string columnName)
+        public static bool IsColumnExists(string tableName, string columnName)
         {
-            return schema.Rows.Cast<DataRow>().Count(r => r["name"].Equals(columnName)) > 0;
+            return GetSchema(tableName).Rows.Cast<DataRow>().Count(r => r["COLUMN_NAME"].Equals(columnName)) > 0;
         }
 
-        public static bool IsColumnNotExists(this DataTable schema, string columnName)
+        public static bool IsColumnNotExists(string tableName, string columnName)
         {
-            return schema.IsColumnExists(columnName) == false;
+            return IsColumnExists(tableName, columnName) == false;
         }
 
         public static SQLQuery<T> FindAs<T>(string sql)
@@ -56,6 +59,13 @@ namespace Hozaru.Database.SQLDataMapper
         public static void CreateDatabase()
         {
             new SQLCreateDatabase().CreateDB();
+        }
+
+        public static DataTable GetSchema(string tableName)
+        {
+            if (!IsTableExist(tableName))
+                throw new Exception(string.Format("Table {0} not exist", tableName));
+            return new SQLExecuteDataReader().GetSchema(tableName);
         }
     }
 }

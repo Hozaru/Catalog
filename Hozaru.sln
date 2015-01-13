@@ -7,16 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{30DAF6EC-5BB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DFA5341B-26E2-4B3F-BE2C-483A831A6D8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.AppServices", "Catalog\src\MBH.Catalogs.AppServices\Hozaru.Catalogs.AppServices.csproj", "{C67BF680-602A-4D10-8804-59962F052BB1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog", "Catalog\src\MBH.Catalogs.Catalog\Hozaru.Catalogs.Catalog.csproj", "{E54186E0-5D8F-42D4-B35B-A31B710CA743}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Repository", "Catalog\src\MBH.Catalogs.Repository\Hozaru.Catalogs.Repository.csproj", "{900BF744-59AB-4165-9250-52335CAF30BE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog.Fixtures", "Catalog\tests\MBH.Catalogs.Catalog.Fixtures\Hozaru.Catalogs.Catalog.Fixtures.csproj", "{0BAC904D-3DDB-47DB-8FA9-DD365D990693}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog.IntegrationTests", "Catalog\tests\MBH.Catalogs.Catalog.IntegrationTests\Hozaru.Catalogs.Catalog.IntegrationTests.csproj", "{6D3B2804-9883-4830-9A6E-AA77C012A4E4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{174DB402-08F3-40DD-89EC-8D589EDAAD30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96BCF895-F1BF-4442-B62A-DCED3FEE9079}"
@@ -38,12 +28,44 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3A118B
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog.RepositoryTest", "Catalog\tests\Hozaru.Catalogs.Catalog.RepositoryTest\Hozaru.Catalogs.Catalog.RepositoryTest.csproj", "{700149D5-6B1B-4428-BAE7-B49D58D54891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.AppServices", "Catalog\src\Hozaru.Catalogs.AppServices\Hozaru.Catalogs.AppServices.csproj", "{C67BF680-602A-4D10-8804-59962F052BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog", "Catalog\src\Hozaru.Catalogs.Catalog\Hozaru.Catalogs.Catalog.csproj", "{E54186E0-5D8F-42D4-B35B-A31B710CA743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Repository", "Catalog\src\Hozaru.Catalogs.Repository\Hozaru.Catalogs.Repository.csproj", "{900BF744-59AB-4165-9250-52335CAF30BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog.Fixtures", "Catalog\tests\Hozaru.Catalogs.Catalog.Fixtures\Hozaru.Catalogs.Catalog.Fixtures.csproj", "{0BAC904D-3DDB-47DB-8FA9-DD365D990693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hozaru.Catalogs.Catalog.IntegrationTests", "Catalog\tests\Hozaru.Catalogs.Catalog.IntegrationTests\Hozaru.Catalogs.Catalog.IntegrationTests.csproj", "{6D3B2804-9883-4830-9A6E-AA77C012A4E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700149D5-6B1B-4428-BAE7-B49D58D54891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700149D5-6B1B-4428-BAE7-B49D58D54891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700149D5-6B1B-4428-BAE7-B49D58D54891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700149D5-6B1B-4428-BAE7-B49D58D54891}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C67BF680-602A-4D10-8804-59962F052BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C67BF680-602A-4D10-8804-59962F052BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67BF680-602A-4D10-8804-59962F052BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,22 +86,6 @@ Global
 		{6D3B2804-9883-4830-9A6E-AA77C012A4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3B2804-9883-4830-9A6E-AA77C012A4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D3B2804-9883-4830-9A6E-AA77C012A4E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03B45EC2-0AEE-49CC-8FFB-A067078B954F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ADE5D84-E966-4C76-AFB0-E9ACD5808C44}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FFB8351-4099-4D3A-BDE4-BFE0268D17FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FA8C226-17C6-4DCA-AE63-F583C147062C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{C67BF680-602A-4D10-8804-59962F052BB1} = {30DAF6EC-5BB6-4402-8247-E11F381BC566}
 		{E54186E0-5D8F-42D4-B35B-A31B710CA743} = {30DAF6EC-5BB6-4402-8247-E11F381BC566}
 		{900BF744-59AB-4165-9250-52335CAF30BE} = {30DAF6EC-5BB6-4402-8247-E11F381BC566}
+		{700149D5-6B1B-4428-BAE7-B49D58D54891} = {DFA5341B-26E2-4B3F-BE2C-483A831A6D8C}
 		{0BAC904D-3DDB-47DB-8FA9-DD365D990693} = {DFA5341B-26E2-4B3F-BE2C-483A831A6D8C}
 		{6D3B2804-9883-4830-9A6E-AA77C012A4E4} = {DFA5341B-26E2-4B3F-BE2C-483A831A6D8C}
 		{96BCF895-F1BF-4442-B62A-DCED3FEE9079} = {174DB402-08F3-40DD-89EC-8D589EDAAD30}

@@ -4,16 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FA8C226-17C6-4DCA-AE63-F583C147062C}</ProjectGuid>
+    <ProjectGuid>{700149D5-6B1B-4428-BAE7-B49D58D54891}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hozaru.Database.PostgreSQLFixture</RootNamespace>
-    <AssemblyName>Hozaru.Database.PostgreSQLFixture</AssemblyName>
+    <RootNamespace>Hozaru.Catalogs.Catalog.RepositoryTest</RootNamespace>
+    <AssemblyName>Hozaru.Catalogs.Catalog.RepositoryTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,16 +29,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Npgsql.2.2.3\lib\net45\Mono.Security.dll</HintPath>
+    <Reference Include="Moq">
+      <HintPath>..\..\..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,34 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexts\Behave_like_database_created.cs" />
-    <Compile Include="Contexts\Behave_like_data_example_inserted.cs" />
-    <Compile Include="Contexts\Behave_like_table_created.cs" />
-    <Compile Include="Model\Example.cs" />
-    <Compile Include="Setup.cs" />
-    <Compile Include="TestCountRow.cs" />
-    <Compile Include="TestCreateDatabase.cs" />
+    <Compile Include="TestProductSQLRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCreateTable.cs" />
-    <Compile Include="TestDeleteData.cs" />
-    <Compile Include="TestFindData.cs" />
-    <Compile Include="TestGetSchemaSQL.cs" />
-    <Compile Include="TestInsertData.cs" />
-    <Compile Include="TestUpdateData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Database\src\Hozaru.Database.SQLDataMapper\Hozaru.Database.SQLDataMapper.csproj">
+      <Project>{1ade5d84-e966-4c76-afb0-e9acd5808c44}</Project>
+      <Name>Hozaru.Database.SQLDataMapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Hozaru.Catalogs.Catalog\Hozaru.Catalogs.Catalog.csproj">
+      <Project>{e54186e0-5d8f-42d4-b35b-a31b710ca743}</Project>
+      <Name>Hozaru.Catalogs.Catalog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Hozaru.Catalogs.Repository\Hozaru.Catalogs.Repository.csproj">
+      <Project>{900bf744-59ab-4165-9250-52335caf30be}</Project>
+      <Name>Hozaru.Catalogs.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\Hozaru.Database.SQLDataMapper\Hozaru.Database.SQLDataMapper.csproj">
-      <Project>{1ade5d84-e966-4c76-afb0-e9acd5808c44}</Project>
-      <Name>Hozaru.Database.SQLDataMapper</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
